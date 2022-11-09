@@ -1,7 +1,5 @@
 const userRouter = require('./user');
 function route(app){
-
-    
     
     app.use('/users', userRouter);
 

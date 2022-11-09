@@ -5,15 +5,15 @@ const db = require('./config/db');
 const route = require('./routes');
 
 //Connect to DB
-db.connect()
+db.connect();
 
 //Router init
 route(app);
     
-app.get('/',(req,res) => {
+app.get('/', (req, res) => {
     res.send();
-})
+});
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}`);
+});
